@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Người Đàn Ông Mang Tên Ove - Góc Chữa Lành</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* PHẦN TRANG TRÍ (CSS) */
+        :root {
+            --zen-green: #6b705c; /* Xanh rêu thanh tịnh */
+            --paper-bg: #fdfaf5; /* Màu giấy cũ */
+            --wood-brown: #a68a64; /* Màu gỗ nhạt */
+            --text-main: #3b3d33;
+        }
+
+        body {
+            background-color: var(--paper-bg);
+            color: var(--text-main);
+            font-family: 'Lora', serif;
+            margin: 0;
+            line-height: 1.8;
+            background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* Hiệu ứng chuyển động mượt mà khi di chuyển chuột */
+        section {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 40px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid transparent;
+            cursor: default;
+        }
+
+        section:hover {
+            transform: translateY(-10px) scale(1.01);
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--zen-green);
+            box-shadow: 0 20px 40px rgba(107, 112, 92, 0.1);
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--zen-green);
+            font-size: 2.5rem;
+            margin-top: 0;
+            border-bottom: 1px dashed var(--wood-brown);
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        /* Phần Header: Ảnh và Video */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .book-cover {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            transition: transform 0.6s ease;
+            margin-bottom: 30px;
+        }
+
+        .book-cover:hover {
+            transform: scale(1.08) rotate(-3deg);
+        }
+
+        .video-player {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            background: #000;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Danh sách thông tin */
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            padding: 15px 0 15px 40px;
+            position: relative;
+            border-bottom: 1px dashed rgba(0,0,0,0.1);
+        }
+
+        .info-list li::before {
+            content: '🍃';
+            position: absolute;
+            left: 0;
+            top: 18px;
+        }
+
+        /* Trích dẫn đẹp */
+        .quote-container {
+            text-align: center;
+            padding: 60px 20px;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            font-style: italic;
+            color: var(--wood-brown);
+        }
+
+        /* Thông tin liên hệ */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-family: 'Montserrat', sans-serif;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            color: #777;
+        }
+
+        .contact-link {
+            color: var(--zen-green);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-link:hover {
+            color: var(--wood-brown);
+            text-decoration: underline;
+        }
+
+        /* Hiệu ứng mờ ảo lúc bắt đầu */
+        .fade-in {
+            animation: fadeInAnim 2s ease forwards;
+        }
+
+        @keyframes fadeInAnim {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container fade-in">
+    <header>
+        <img src="Anhbiasach.jpg" alt="Bìa sách Một người đàn ông tên Ove" class="book-cover">
+        <video class="video-player" controls preload="auto">
+            <source src="thoigian.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video này. Hãy kiểm tra lại file thoigian.mp4.
+        </video>
+        <p style="font-style: italic; color: #888;">Lắng nghe hơi thở của thời gian và ký ức...</p>
+    </header>
+
+    <section>
+        <h2>Tóm tắt nội dung</h2>
+        <p>
+            Cuốn sách <strong>“Người Đàn Ông Mang Tên Ove”</strong> của tác giả Fredrik Backman kể về Ove - một người đàn ông già nua, khó tính, cộc cằn và không còn niềm vui nào trong cuộc sống. Sự xuất hiện của những người hàng xóm mới, cùng những sự kiện bất ngờ, dần dần khiến Ove thay đổi cách nhìn về thế giới xung quanh và chính bản thân mình.
+        </p>
+        <p>
+            Tác phẩm không chỉ là câu chuyện về tình bạn, tình yêu mà còn phản ánh những giá trị sâu sắc về sự tha thứ và lòng kiên nhẫn. Được viết bởi Fredrik Backman - một tác giả nổi tiếng người Thụy Điển, cuốn sách đã trở thành hiện tượng toàn cầu và chiếm trọn cảm tình của độc giả khắp thế giới.
+        </p>
+    </section>
+
+    <section>
+        <h2>Thông tin thú vị</h2>
+        <ul class="info-list">
+            <li><strong>Nguồn cảm hứng:</strong> Backman viết sách sau khi đọc bài báo về một người đàn ông khó tính đòi nhân viên nhà hát xin lỗi vì không được ngồi cạnh vợ.</li>
+            <li><strong>Nhân vật Ove:</strong> Dù hay càu nhàu về xe số tự động và người hàng xóm, Ove thực chất có trái tim nhân hậu, luôn sẵn lòng giúp đỡ kẻ yếu.</li>
+            <li><strong>Hành trình chữa lành:</strong> Những người hàng xóm "phiền phức" đã vô tình phá hỏng ý định tiêu cực của Ove, mang lại cho ông một gia đình mới đầy ấm áp.</li>
+            <li><strong>Triết lý:</strong> Đừng bao giờ phán xét người khác qua vẻ ngoài cộc cằn, vì bên trong có thể là một tâm hồn đang chịu nhiều tổn thương.</li>
+            <li><strong>Hiện tượng văn học:</strong> Sức hút của cuốn sách lớn đến nỗi có cả fanclub tại Hàn Quốc và Mỹ.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cảm nhận cá nhân</h2>
+        <p>
+            Ove hiện lên là một ông già 59 tuổi cáu kỉnh và nguyên tắc, nhưng đằng sau đó là nỗi cô đơn thắt lòng khi mất đi người vợ Sonja. Câu chuyện không hề bi lụy mà đầy dí dỏm, mang đến thông điệp chữa lành mạnh mẽ.
+        </p>
+        <p>
+            Tác phẩm nhấn mạnh rằng tình yêu thương có thể thay đổi một con người. Như lời khẳng định: <em>"Điều làm nên một người đàn ông không phải là lời nói mà chính là hành động"</em>. Ove đã sống một cuộc đời trọn vẹn bằng cách yêu thương và bảo vệ những người xung quanh theo cách lặng lẽ nhất.
+        </p>
+    </section>
+
+    <section class="quote-container">
+        "Người ta chưa bao giờ hỏi ông sống như thế nào trước khi gặp bà. Nhưng nếu có ai đó hỏi, Ove sẽ đáp rằng mình chưa từng sống."
+    </section>
+
+    <footer>
+        <p>Cảm ơn bạn đã ghé thăm góc nhỏ của Ove.</p>
+        <p>Thông tin liên hệ: <a href="mailto:lephuonglinh13062021@gmail.com" class="contact-link">lephuonglinh13062021@gmail.com</a></p>
+    </footer>
+</div>
+
+<script>
+    // Hiệu ứng chữ và khối chuyển động nhẹ theo chuột
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => {
+        sec.addEventListener('mousemove', (e) => {
+            const x = (window.innerWidth / 2 - e.pageX) / 50;
+            const y = (window.innerHeight / 2 - e.pageY) / 50;
+            sec.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+        sec.addEventListener('mouseleave', () => {
+            sec.style.transform = `translateX(0) translateY(0)`;
+        });
+    });
+</script>
+
+</body>
+</html>
